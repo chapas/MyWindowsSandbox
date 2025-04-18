@@ -1,0 +1,13 @@
+<Configuration>
+    <MappedFolders>
+        <MappedFolder>
+            <HostFolder>k:\sandbox</HostFolder>
+            <SandboxFolder>C:\Users\WDAGUtilityAccount\Desktop\USB</SandboxFolder>
+            <ReadOnly>false</ReadOnly>
+        </MappedFolder>
+    </MappedFolders>
+    <LogonCommand>
+        <Command>powershell.exe -Command "Start-Process powershell.exe -Verb RunAs -ArgumentList '-ExecutionPolicy Bypass -File \"C:\Users\WDAGUtilityAccount\Desktop\USB\wsb-startup.ps1\"'"</Command>
+    </LogonCommand>
+    <Networking>Enable</Networking>
+</Configuration>
